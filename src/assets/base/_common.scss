@@ -1,0 +1,9 @@
+.w100 {
+  width: 100%;
+}
+
+.pattern {
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #50E3C2), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #50E3C2), color-stop(0.75, #50E3C2), color-stop(0.75, transparent), to(transparent));
+  background-size: 40px 40px;
+  z-index: 2;
+}

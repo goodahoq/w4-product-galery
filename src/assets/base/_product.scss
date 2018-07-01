@@ -1,0 +1,152 @@
+@import './color';
+@import './common';
+@import './spacing';
+@import './mixin';
+.back {
+  white-space: nowrap;
+  display: inline-flex;
+  grid-area: 1/1/2/4;
+  align-self: center;
+  justify-self: end;
+  cursor: pointer;
+}
+
+.itemBack {
+  grid-area: 2/1/8/9;
+  display: grid;
+  grid-template-columns: repeat(8, 120px);
+  grid-template-rows: repeat(6, 100px);
+  .itemImg {
+    z-index: 1;
+    grid-area: 2/2/6/8;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1519406709381-c1f293304b28?ixlib=rb-0.3.5…jEyMDd9&s=98c497a…&auto=format&fit=crop&w=634&q=80);
+  }
+  .title1 {
+    grid-column: 6 / 8;
+    grid-row: 1;
+  }
+  .title2 {
+    grid-column: 8;
+    grid-row: 2/4;
+    transform: translateY(-30%);
+  }
+  .title3 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .title4 {
+    grid-column: 2;
+    grid-row: 6;
+    justify-self: start;
+    transform: rotate(180deg) translateY(110%);
+  }
+  .itemBackTitle {
+    font-size: 48px;
+    font-weight: 900;
+    color: $black;
+    text-align: right;
+    line-height: 48px;
+    z-index: 2;
+    position: relative;
+    align-self: end;
+  }
+  .vertical {
+    justify-self: start;
+    writing-mode: vertical-rl;
+  }
+  .vertical-inverse {
+    justify-self: end;
+    writing-mode: vertical-rl;
+  }
+  .itemBg {
+    background: $main-green;
+    grid-area: 1/1/3/3;
+    transform: translate(25%, 25%)
+  }
+  .itemBorder {
+    grid-area: 4/4/6/8;
+    border: 20px solid $main-green;
+    transform: translate(12.5%, 25%);
+  }
+}
+
+.product-content {
+  display: grid;
+  grid-area: 9 / 1 / 13 / 9;
+  grid-template-columns: repeat(8, 120px);
+  grid-template-rows: repeat(6, 100px);
+  .contentTag {
+    font-weight: 900;
+    font-style: italic;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    text-align: left;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+  }
+  .contentTitle {
+    font-size: 48px;
+    grid-column: 3 / 8;
+    grid-row: 1;
+    text-align: left;
+    font-weight: 900;
+    span {
+      display: block;
+      font-size: 20px;
+    }
+  }
+  .contentBody {
+    grid-column: 3 / 8;
+    grid-row: 2 / 3;
+    font-weight: 300;
+    text-align: left;
+    font-size: 16px;
+    color: $black;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-area: 13 / 1 / 21 / 9;
+  grid-template-columns: repeat(8, 120px);
+  grid-template-rows: repeat(8, 100px);
+  .footerImg1 {
+    grid-area: 2/2/5/5;
+    z-index: 2;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1519406686401-e9ef2420c15b?ixlib=rb-0.3.5…EyMDd9&s=f489763…&auto=format&fit=crop&w=1350&q=80);
+  }
+  .footerImg2 {
+    grid-area: 4/4/8/8;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1519406728390-b536d7be138f?ixlib=rb-0.3.5…jEyMDd9&s=787976d…&auto=format&fit=crop&w=634&q=80);
+  }
+  .footerBorder {
+    border: 20px solid $main-green;
+    grid-column: 1 / 5;
+    grid-row: 4 / 6;
+    transform: translate(12.5%, -25%);
+  }
+  .footerBg1 {
+    grid-column: 6 / 8;
+    grid-row: 2 / 4;
+    background: $main-green;
+    transform: translate(25%, 50%);
+  }
+  .footerBg2 {
+    grid-column: 2 / 4;
+    grid-row: 7;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #50E3C2), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #50E3C2), color-stop(0.75, #50E3C2), color-stop(0.75, transparent), to(transparent));
+    background-size: 40px 40px;
+    transform: translate(25%, 50%);
+    z-index: 1;
+  }
+}
