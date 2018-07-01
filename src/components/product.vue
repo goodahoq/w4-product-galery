@@ -1,6 +1,6 @@
 <template>
     <div class="grid-container">
-        <router-link to="/home" class="back mR100">
+        <router-link to="/" class="back mR100">
             <i class="fas fa-arrow-left fa-2x"></i>
             <span class="title-label mL20 text-center"><span>CCCLOTHES</span></span>
         </router-link>
