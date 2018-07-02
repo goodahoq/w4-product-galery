@@ -44,6 +44,24 @@ a * {
   margin-bottom: -20px;
 }
 
+//animated
+.itemAni {
+  .itemSubTitle,
+  .itemNumber,
+    {
+    transition: all 200ms ease-in;
+  }
+  &:hover {
+    .itemSubTitle {
+      transform: translateY(-10%);
+      z-index: 5;
+    }
+    .itemNumber {
+      transform: translateX(-10%);
+    }
+  }
+}
+
 //item1
 .item1 {
   display: grid;
@@ -71,11 +89,26 @@ a * {
     margin-top: -20px;
     z-index: 2;
     position: relative;
+    transition: all 200ms ease-in;
+    &:hover {
+      color: #F7CE46;
+      transform: translateY(10%);
+    }
+    &:hover::before {
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
+    &:hover::after {
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
     &:before {
-      @include titleShadowBefore
+      @include titleShadowBefore;
+      transition: all 200ms ease-in;
     }
     &:after {
-      @include titleShadowAfter
+      @include titleShadowAfter;
+      transition: all 200ms ease-in;
     }
   }
   .itemBorder {
@@ -139,11 +172,26 @@ a * {
     line-height: 48px;
     z-index: 2;
     position: relative;
+    transition: all 200ms ease-in;
+    &:hover {
+      color: #F7CE46;
+      transform: translateY(10%);
+    }
+    &:hover::before {
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
+    &:hover::after {
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
     &:before {
-      @include titleShadowBefore
+      @include titleShadowBefore;
+      transition: all 200ms ease-in;
     }
     &:after {
-      @include titleShadowAfter
+      @include titleShadowAfter;
+      transition: all 200ms ease-in;
     }
   }
   .itemBg {
@@ -198,11 +246,26 @@ a * {
     z-index: 2;
     position: relative;
     transform: translate(9%, 55%);
+    transition: all 200ms ease-in;
+    &:hover {
+      color: #F7CE46;
+      transform: translate(19%, 55%);
+    }
+    &:hover::before {
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
+    &:hover::after {
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
     &:before {
-      @include titleShadowBefore
+      @include titleShadowBefore;
+      transition: all 200ms ease-in;
     }
     &:after {
-      @include titleShadowAfter
+      @include titleShadowAfter;
+      transition: all 200ms ease-in;
     }
   }
   .itemBg {
@@ -259,6 +322,19 @@ a * {
     z-index: 2;
     position: relative;
     transform: rotate(180deg) translateY(27%);
+    transition: all 200ms ease-in;
+    &:hover {
+      color: #F7CE46;
+      transform: rotate(180deg) translateY(10%);
+    }
+    &:hover::before {
+      right: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
+    &:hover::after {
+      right: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
     &:before {
       content: attr(text);
       top: 0px;
@@ -270,6 +346,7 @@ a * {
       -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
       overflow: hidden;
+      transition: all 200ms ease-in;
     }
     &:after {
       content: attr(text);
@@ -279,6 +356,7 @@ a * {
       position: absolute;
       color: rgba(0, 0, 0, 0.1);
       overflow: hidden;
+      transition: all 200ms ease-in;
     }
   }
   .itemBorder {
@@ -332,11 +410,26 @@ a * {
     align-self: end;
     position: relative;
     font-weight: 900;
+    transition: all 200ms ease-in;
+    &:hover {
+      color: #F7CE46;
+      transform: translateY(10%);
+    }
+    &:hover::before {
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
+    &:hover::after {
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
     &:before {
-      @include titleShadowBefore
+      @include titleShadowBefore;
+      transition: all 200ms ease-in;
     }
     &:after {
-      @include titleShadowAfter
+      @include titleShadowAfter;
+      transition: all 200ms ease-in;
     }
   }
   .itemImg {
@@ -390,11 +483,26 @@ a * {
     position: relative;
     line-height: 48px;
     z-index: 2;
+    transition: all 200ms ease-in;
+    &:hover {
+      color: #F7CE46;
+      transform: translateY(10%);
+    }
+    &:hover::before {
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
+    &:hover::after {
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
     &:before {
-      @include titleShadowBefore
+      @include titleShadowBefore;
+      transition: all 200ms ease-in;
     }
     &:after {
-      @include titleShadowAfter
+      @include titleShadowAfter;
+      transition: all 200ms ease-in;
     }
   }
   .itemImg {
@@ -451,6 +559,19 @@ a * {
     justify-self: start;
     writing-mode: vertical-rl;
     position: relative;
+    transition: all 200ms ease-in;
+    &:hover {
+      color: #F7CE46;
+      transform: translateY(10%);
+    }
+    &:hover::before {
+      left: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
+    &:hover::after {
+      left: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
     &:before {
       content: attr(text);
       position: absolute;
@@ -459,6 +580,7 @@ a * {
       left: 42px;
       width: 22px;
       overflow: hidden;
+      transition: all 200ms ease-in;
     }
     &:after {
       content: attr(text);
@@ -468,6 +590,7 @@ a * {
       left: 59px;
       width: 15px;
       overflow: hidden;
+      transition: all 200ms ease-in;
     }
   }
   .itemImg {
